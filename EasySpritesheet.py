@@ -210,7 +210,7 @@ class SpritesheetCreator(TkinterDnD.Tk):
 
             # Get the selected export format
             export_format = self.export_format.get()
-            output_filename = f"{base_name}_sh.{export_format.lower()}"
+            output_filename = f"{base_name}_sh_{rows}x{cols}.{export_format.lower()}"
             output_path = os.path.join(output_dir, output_filename)
             spritesheet.save(output_path, export_format)
 
